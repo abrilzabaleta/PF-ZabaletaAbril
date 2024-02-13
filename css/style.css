@@ -1,0 +1,256 @@
+/*CONFIGURACIÓN GENERAL*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'raleway';
+    color: rgb(255,255,255);
+}
+.paragraph{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* ESTILOS DE HEADER */
+.main-background{
+    background-color: rgb(27, 27, 27);
+    border: 30px solid rgb(20, 20, 20);
+    padding: 30px;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.menu-ppal{
+    background-color: rgb(248,249,250);
+}
+.menu-ppal__img{
+    width: 60px ;
+    border-right: 5px;
+}
+.menu-ppal h1{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.nav-link:hover{
+    color: rgb(20, 20, 20);
+    border-top: 3px solid rgb(20, 20, 20);
+}
+
+
+/*  INDEX   */
+.seccion-bienvenida{
+    background: linear-gradient(to bottom, rgba(25, 25, 25, 0), rgb(25, 25, 25)), url(../assets/Party1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 20px;
+}
+.seccion-bienvenida p{
+    text-align: center;   
+    padding: 0px 150px; 
+}
+.seccion-bienvenida h1{
+   font-size: 50px;
+   font-weight: 550;
+   letter-spacing: 3px;
+}
+.seccion-bienvenida p{
+    font-size: 15px;
+}
+.seccion-ppal{
+    background-color: rgb(27,27,27);
+    border:solid;
+    border-width: 15px;
+    border-color: rgb(25, 25, 25);
+    display: flex;
+    margin: 0px;
+    padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.seccion-ppal h2{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.seccion-ppal h3{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.seccion-ppal div img{
+    display:flex;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    margin: 10px 30px 10px 30px;
+}
+
+/*SOBRE-NOSOTROS*/
+.div-sn{
+    display: flex;
+    padding: 20px;
+}
+.div-sn article{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.div-sn img{
+    width: 50%;
+    height: 50%;
+}
+.div-sn h1{
+    font: size 40px; ;
+    font-weight:500 ;
+}
+
+.div-sn__first{
+    padding-left: 20px;
+    text-align: left;
+}
+.div-sn__second{
+    padding-right: 20px;
+    text-align: right;
+}
+
+
+/*EVENTOS*/
+.div-e{
+    overflow: auto; 
+    padding: 30px 20px;  
+}
+.div-e img{
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+}
+
+
+/*ARTISTAS*/
+.sec-artistas{
+    display: flex;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.sec-artistas article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 25%;
+    padding: 20px;
+}
+
+.sec-artistas article img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+
+.sec-artistas article p{
+    height: 300px;
+}
+
+/*FAQ*/
+.main-FAQ{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(226,226,226);
+    background-color: rgb(78,75,75);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--bs-accordion-btn-focus-border-color);
+    box-shadow:none;
+}
+
+.accordion-body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(226,226,226);
+}
+
+/*ESTILOS DE FOOTER*/
+.footer-gral{
+    background-color: rgb(25, 25, 25);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-gral h1{
+    font-size: small;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+}
+
+.redes-sociales a img{
+    width: 23px;
+    height: 23px;
+    filter: invert(70%);
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.footer-gral img {
+    width: 55px;
+    height: 55px;
+}
+
+
+
+
+/* MEDIA QUERY MOBILE */
+@media {min-width: 320px;} and {max-width: 768px;
+    
+}
