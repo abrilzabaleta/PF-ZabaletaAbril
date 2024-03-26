@@ -113,7 +113,7 @@
 
     /*desktop*/
 @media (min-width: 992px){
-    .seccion-ppal-md{
+    .seccion-ppal-prueba{
         display: none;
     }
 }
@@ -122,10 +122,34 @@
     .seccion-ppal{
         display: none;
     }
-    .seccion-ppal-md{
-        display: block;
+    .seccion-bienvenida p{
+        text-align: center;   
+        padding: 0px 50px; 
     }
+   .seccion-ppal-prueba{
+        background-color: rgb(27,27,27);
+        border:solid;
+        border-width: 15px;
+        border-color: rgb(25, 25, 25);
+        display: flex;
+        margin: 0px;
+        padding: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+   img.d-block.roundedimg {
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+   }
+   .seccion-ppal-prueba h3{
+        font-size: 15px;
+        font-weight: 500;
+   }
 }
+
+
 
 /*SOBRE-NOSOTROS*/
 .div-sn{
@@ -192,6 +216,12 @@
     width: 100%;
     height:300px;
     object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .orientation-reverse{
+        flex-direction: column-reverse;
+    }
 }
 
 
