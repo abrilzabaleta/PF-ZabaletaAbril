@@ -1,0 +1,14 @@
+/*Eventos*/
+.div-e{
+    overflow: auto; 
+    padding: 30px 20px;  
+    img{
+        @include sizes(100%,300px);
+        object-fit: cover;
+    }
+}
+@media (max-width: 768px){
+    .orientation-reverse{
+        flex-direction: column-reverse;
+    }
+}

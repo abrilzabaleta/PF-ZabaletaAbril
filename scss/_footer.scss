@@ -1,0 +1,29 @@
+/*Footer*/
+.footer-gral{
+    background-color: $borde;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    h1{
+        @include fontsizes(small,none,none);
+    }
+    img {
+        @include sizes(55px,55px);
+    }
+}
+.redes-sociales {
+    a{
+        text-decoration: none;
+        img{
+            width: 23px;
+            height: 23px;
+            filter: invert(70%);
+            padding: 5px;
+            margin-top: 5px;
+        }
+    }
+}

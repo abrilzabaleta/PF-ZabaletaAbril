@@ -1,0 +1,32 @@
+/* Header*/
+.main-background{
+    background-color: $backg;
+    border: 30px solid rgb(20, 20, 20);
+    padding: 30px;
+}
+.navbar{
+    &-brand{
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+    &-collapse{
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
+}
+.menu-ppal{
+    background-color: $colornavbar;
+    h1{
+        @include fontsizes(20px,none,none);
+        padding-left: 10px;
+    }
+    &__img{
+        width: 60px ;
+        border-right: 5px;
+    }
+}
+.nav-link:hover{
+    color: $borde;
+    border-top: 3px solid $borde;
+}

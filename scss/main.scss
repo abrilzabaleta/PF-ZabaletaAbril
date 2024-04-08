@@ -1,0 +1,17 @@
+
+//Configuración general
+@import './Reset/variables';
+@import './Reset/reset';
+
+//Estructura
+@import 'header';
+
+@import './Pages/principal';
+@import './Pages/sobrenosotros';
+@import './Pages/eventos';
+@import './Pages/artistas';
+@import './Pages/FAQ';
+
+@import 'footer';
+
+

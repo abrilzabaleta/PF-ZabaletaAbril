@@ -1,0 +1,26 @@
+/*FAQ*/
+.main-FAQ{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    padding: 30px 60px;
+}
+.accordion{
+    &-body {
+        color: $borde;
+            background-color: $backgroundcollapseFAQ;
+    }
+    &-button{
+        &:not(.collapsed) {
+            color: $colorletra;
+            background-color: rgb(78,75,75);
+        }
+        &:focus {
+            z-index: 3;
+            border-color: var(--bs-accordion-btn-focus-border-color);
+            box-shadow:none;
+        }
+    }
+}

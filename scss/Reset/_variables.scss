@@ -1,0 +1,21 @@
+
+$proyectfont: 'raleway';
+
+//Colores
+$backg: rgb(27,27,27);
+$borde: rgb(25,25,25);
+$colorletra: rgb(255,255,255);
+$colornavbar: rgb(248,249,250);
+$backgroundcollapseFAQ:rgb(227,227,227);
+
+//Mixins
+@mixin sizes($w,$h){
+    height: $h;
+    width: $w;
+}
+
+@mixin fontsizes($fs,$fw,$ls){
+    font-size: $fs;
+    font-weight: $fw;
+    letter-spacing: $ls;
+}

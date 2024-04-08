@@ -1,0 +1,96 @@
+/*Principal*/
+.seccion-bienvenida{
+    background: linear-gradient(to bottom, rgba(25, 25, 25, 0), $borde), url(../assets/Party1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 20px;
+    p{
+        text-align: center;   
+        padding: 0px 150px; 
+        font-size: 15px;
+    }
+    h1{
+        @include fontsizes(50px,550,3px);
+     }
+}
+.seccion-ppal{
+    background-color: $backg;
+    border:solid;
+    border-width: 15px;
+    border-color: $borde;
+    display: flex;
+    margin: 0px;
+    padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    h2{
+        text-align: center;
+        padding-bottom: 5px;
+        @include fontsizes(30px,400,4px);
+    }
+    h3{
+        text-align: center;
+        padding-bottom: 5px;
+        @include fontsizes(15px,200,none);
+    }
+    div{
+        img{
+        display:flex;
+        border-radius: 100%;
+        @include sizes(160px,160px);
+        margin: 10px 30px 10px 30px;
+        }
+    }
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*-desktop-*/
+@media (min-width: 992px){
+    .seccion-ppal-prueba{
+        display: none;
+    }
+}
+/*-tablet-mobile-*/
+@media (max-width: 992px){
+    .seccion-ppal{
+        display: none;
+    }
+    .seccion-bienvenida p{
+        text-align: center;   
+        padding: 0px 50px; 
+    }
+   .seccion-ppal-prueba{
+        background-color: $backg;
+        border:solid;
+        border-width: 15px;
+        border-color: $borde;
+        display: flex;
+        margin: 0px;
+        padding: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            @include fontsizes(15px,500,none);
+       }
+   }
+   img.d-block.roundedimg {
+        border-radius: 50%;
+        @include sizes(250px,250px);
+   }
+}
