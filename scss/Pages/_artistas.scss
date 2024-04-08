@@ -17,9 +17,21 @@
             border-radius: 100%;
             @include sizes(150px,150px);
             margin: 15px;
+            transition: box-shadow 0.3s;
+        }
+        &:hover img {
+            box-shadow: 0 0 20px $sombra;
         }
         p{
             height: 300px;
+        }
+        &:hover {
+            @each $artista, $color in $artistas-color {
+              .#{$artista} {
+                color: $color;
+                transition: color 0.3s;
+              }
+            }
         }
     }
 }

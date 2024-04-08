@@ -39,18 +39,25 @@
         padding-bottom: 5px;
         @include fontsizes(30px,400,4px);
     }
-    h3{
-        text-align: center;
-        padding-bottom: 5px;
-        @include fontsizes(15px,200,none);
-    }
-    div{
-        img{
-        display:flex;
-        border-radius: 100%;
-        @include sizes(160px,160px);
-        margin: 10px 30px 10px 30px;
+    section{
+        transition: transform 0.3s, box-shadow 0.3s;
+        &:hover{
+            transform: scale(1.1);
+            & img{
+                box-shadow: 0 0 20px $sombra;
+            }
         }
+        h3{
+            text-align: center;
+            padding-bottom: 5px;
+            @include fontsizes(15px,200,none);
+        }
+        img{
+            display:flex;
+            border-radius: 100%;
+            @include sizes(160px,160px);
+            margin: 10px 30px 10px 30px;
+            }
     }
 }
 .content{
@@ -67,30 +74,33 @@
 }
 /*-tablet-mobile-*/
 @media (max-width: 992px){
-    .seccion-ppal{
-        display: none;
+    .seccion{
+        &-ppal{
+            display: none;
+            &-prueba{
+                background-color: $backg;
+                border:solid;
+                border-width: 15px;
+                border-color: $borde;
+                display: flex;
+                margin: 0px;
+                padding: 30px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    @include fontsizes(15px,500,none);
+                }
+            }
+        }
+        &-bienvenida p{
+            text-align: center;   
+            padding: 0px 50px; 
+        }
+          
     }
-    .seccion-bienvenida p{
-        text-align: center;   
-        padding: 0px 50px; 
-    }
-   .seccion-ppal-prueba{
-        background-color: $backg;
-        border:solid;
-        border-width: 15px;
-        border-color: $borde;
-        display: flex;
-        margin: 0px;
-        padding: 30px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h3{
-            @include fontsizes(15px,500,none);
-       }
-   }
-   img.d-block.roundedimg {
+    img.d-block.roundedimg {
         border-radius: 50%;
         @include sizes(250px,250px);
-   }
+    }
 }

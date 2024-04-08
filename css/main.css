@@ -93,14 +93,23 @@
   font-weight: 400;
   letter-spacing: 4px;
 }
-.seccion-ppal h3 {
+.seccion-ppal section {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.seccion-ppal section:hover {
+  transform: scale(1.1);
+}
+.seccion-ppal section:hover img {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.seccion-ppal section h3 {
   text-align: center;
   padding-bottom: 5px;
   font-size: 15px;
   font-weight: 200;
   letter-spacing: none;
 }
-.seccion-ppal div img {
+.seccion-ppal section img {
   display: flex;
   border-radius: 100%;
   height: 160px;
@@ -125,10 +134,6 @@
   .seccion-ppal {
     display: none;
   }
-  .seccion-bienvenida p {
-    text-align: center;
-    padding: 0px 50px;
-  }
   .seccion-ppal-prueba {
     background-color: rgb(27, 27, 27);
     border: solid;
@@ -145,6 +150,10 @@
     font-size: 15px;
     font-weight: 500;
     letter-spacing: none;
+  }
+  .seccion-bienvenida p {
+    text-align: center;
+    padding: 0px 50px;
   }
   img.d-block.roundedimg {
     border-radius: 50%;
@@ -244,9 +253,25 @@
   height: 150px;
   width: 150px;
   margin: 15px;
+  transition: box-shadow 0.3s;
+}
+.sec-artistas article:hover img {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 .sec-artistas article p {
   height: 300px;
+}
+.sec-artistas article:hover .artist1 {
+  color: rgb(128, 226, 233);
+  transition: color 0.3s;
+}
+.sec-artistas article:hover .artist2 {
+  color: rgb(139, 241, 139);
+  transition: color 0.3s;
+}
+.sec-artistas article:hover .artist3 {
+  color: rgb(255, 119, 119);
+  transition: color 0.3s;
 }
 
 /*-desktop-*/
@@ -330,13 +355,6 @@
 
 .redes-sociales a {
   text-decoration: none;
-}
-.redes-sociales a img {
-  width: 23px;
-  height: 23px;
-  filter: invert(70%);
-  padding: 5px;
-  margin-top: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

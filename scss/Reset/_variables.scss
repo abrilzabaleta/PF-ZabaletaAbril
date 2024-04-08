@@ -7,15 +7,26 @@ $borde: rgb(25,25,25);
 $colorletra: rgb(255,255,255);
 $colornavbar: rgb(248,249,250);
 $backgroundcollapseFAQ:rgb(227,227,227);
+$sombra: rgb(0,0,0);
+$txt1: rgb(128, 226, 233);
+$txt2: rgb(139, 241, 139);
+$txt3: rgb(255, 119, 119);
+
 
 //Mixins
 @mixin sizes($w,$h){
     height: $h;
     width: $w;
 }
-
 @mixin fontsizes($fs,$fw,$ls){
     font-size: $fs;
     font-weight: $fw;
     letter-spacing: $ls;
 }
+
+//Mapas
+$artistas-color: (
+  artist1: $txt1,
+  artist2: $txt2,
+  artist3: $txt3,
+);
